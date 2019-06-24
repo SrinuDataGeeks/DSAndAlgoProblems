@@ -1,0 +1,48 @@
+/*
+  Develop a Stack with Linked List :
+
+	Algorithm :-
+
+	 Initially declare ListNode top = null and int length = 0;
+	
+
+	For push(T data)
+
+	=> Create a Temp ListNode with the data.
+		ListNode temp = new ListNode(temp);
+	=> Make temp node next to top
+		temp.setNext = top;
+	=> make top = temp;
+	=> Increment the length value , length++
+
+	For pop()
+
+	=> Verify  List is empty or not, if empty throw user defined execption.
+	=> If it is not empty just update the top = top.getNext();
+
+	if(isEmpty())
+		throw new EmptyStackException();
+	 top = top.getNext();
+
+	For isEmpty()
+		
+		return length == 0;
+
+	For peek()
+
+		return top.getData();
+
+	For printing elements :
+	
+	toString()
+		
+	ListNode current = top;
+	String result = "";
+	while( current != null)
+		{
+	result = result + current.getData() + "\n";
+	current = current.getNext();
+		}
+	
+	
+*/
